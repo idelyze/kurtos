@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─────────────────────────────────────────
+   GOOGLE FONTS — loaded via index.html
+   Cormorant Garamond (serif display)
+   Jost (geometric sans)
+───────────────────────────────────────── */
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-cream font-sans text-espresso-mid overflow-x-hidden;
+    font-weight: 300;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar        { width: 5px; }
+  ::-webkit-scrollbar-track  { @apply bg-cream; }
+  ::-webkit-scrollbar-thumb  { @apply bg-mahogany rounded-full; }
+
+  /* Selection colour */
+  ::selection {
+    background: rgba(192, 120, 48, 0.25);
+    color: #1A0A05;
+  }
+}
+
+/* ─────────────────────────────────────────
+   TYPOGRAPHY UTILITIES
+───────────────────────────────────────── */
+@layer utilities {
+  .font-display {
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .text-overline {
+    @apply text-caramel font-sans font-normal tracking-widest2 uppercase;
+    font-size: 0.72rem;
+    letter-spacing: 0.25em;
+  }
+
+  .text-body {
+    @apply font-sans font-light leading-relaxed;
+    font-size: 0.95rem;
+    line-height: 1.9;
+  }
+
+  /* Section padding — consistent vertical rhythm */
+  .section-pad {
+    @apply py-28 px-10;
+  }
+
+  .section-container {
+    @apply max-w-6xl mx-auto;
+  }
+}
+
+/* ─────────────────────────────────────────
+   SMOOTH HOVER & TRANSITION PRESETS
+───────────────────────────────────────── */
+@layer components {
+  .btn-primary {
+    @apply inline-block px-8 py-3 rounded-full font-sans font-normal uppercase tracking-widest text-cream;
+    font-size: 0.78rem;
+    background: #C07830;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  .btn-primary:hover {
+    opacity: 0.88;
+    transform: scale(1.02);
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 px-8 py-3 rounded-full font-sans font-normal uppercase tracking-widest text-cream;
+    font-size: 0.78rem;
+    border: 1px solid rgba(246, 237, 217, 0.25);
+    background: transparent;
+    transition: background 0.25s ease, border-color 0.25s ease;
+    text-decoration: none;
+  }
+  .btn-ghost:hover {
+    background: rgba(246, 237, 217, 0.08);
+    border-color: rgba(246, 237, 217, 0.45);
+  }
+
+  .btn-dark {
+    @apply inline-block px-8 py-3 rounded-full font-sans font-normal uppercase tracking-widest;
+    font-size: 0.78rem;
+    border: 1px solid rgba(92, 46, 20, 0.22);
+    color: #2C1208;
+    transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+    text-decoration: none;
+  }
+  .btn-dark:hover {
+    background: #1A0A05;
+    color: #F6EDD9;
+    border-color: #1A0A05;
+  }
+
+  .btn-whatsapp {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-full font-sans font-normal uppercase tracking-widest text-white;
+    font-size: 0.76rem;
+    background: #25D366;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    text-decoration: none;
+  }
+  .btn-whatsapp:hover {
+    transform: scale(1.03);
+    opacity: 0.92;
+  }
+
+  .btn-zomato {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-full font-sans font-normal uppercase tracking-widest text-white;
+    font-size: 0.76rem;
+    background: #E23744;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    text-decoration: none;
+  }
+  .btn-zomato:hover {
+    transform: scale(1.02);
+    opacity: 0.92;
+  }
+
+  /* Menu card hover */
+  .menu-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .menu-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 24px 60px rgba(26, 10, 5, 0.18);
+  }
+
+  /* Tab button */
+  .tab-btn {
+    @apply font-sans rounded-full px-6 py-2 font-normal uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    border: 1px solid;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  .tab-btn-active {
+    @apply bg-espresso text-cream;
+    border-color: #1A0A05;
+  }
+  .tab-btn-inactive {
+    @apply bg-transparent text-bark;
+    border-color: rgba(92, 46, 20, 0.2);
+  }
+  .tab-btn-inactive:hover {
+    border-color: #5C2E14;
+  }
+
+  /* Stat bubble */
+  .stat-bubble {
+    @apply absolute bg-cream-light rounded-full flex items-center justify-center;
+    box-shadow: 0 8px 30px rgba(92, 46, 20, 0.1);
+    border: 1px solid rgba(92, 46, 20, 0.12);
+  }
+}
+
+/* ─────────────────────────────────────────
+   KEYFRAME ANIMATIONS
+───────────────────────────────────────── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-14px); }
+}
+
+@keyframes scroll-bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(7px); }
+}
+
+@keyframes shimmer {
+  0%, 100% { opacity: 0.4; }
+  50%       { opacity: 0.9; }
+}
+
+.animate-float         { animation: float 7s ease-in-out infinite; }
+.animate-scroll-bounce { animation: scroll-bounce 2.5s ease-in-out infinite; }
+.animate-shimmer       { animation: shimmer 3s ease-in-out infinite; }
