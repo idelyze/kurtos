@@ -4,7 +4,7 @@ import { waLink } from '../constants/menu'
 
 const NAV_LINKS = [
   { label: 'Menu',      href: '#menu' },
-  { label: 'Our Story', href: '#our-story' },
+  { label: 'About', href: '#our-story' },
   { label: 'Location',  href: '#location' },
 ]
 
@@ -50,7 +50,7 @@ export default function Navbar() {
               transition: 'color 0.4s ease',
             }}
           >
-            Kurtos Kalacs
+            Kurtos
           </a>
 
           {/* Desktop links */}
@@ -78,7 +78,7 @@ export default function Navbar() {
             ))}
 
             <a
-              href={waLink("Hi! I'd like to place an order at Kurtos Kalacs.")}
+              href={waLink("Hi! I want to order Kurtos 🔥 Is it available right now?")}
               target="_blank"
               rel="noreferrer"
               className="font-sans font-normal uppercase no-underline whitespace-nowrap"
@@ -158,13 +158,13 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href={waLink("Hi! I'd like to place an order at Kurtos Kalacs.")}
+              href={waLink("Hi! I want to order Kurtos 🔥 Is it available right now?")}
               target="_blank"
               rel="noreferrer"
               className="btn-whatsapp mt-4"
               onClick={() => setMobileOpen(false)}
             >
-              Order on WhatsApp
+              Order Now on WhatsApp
             </a>
           </motion.div>
         )}

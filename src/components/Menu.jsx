@@ -20,14 +20,14 @@ export default function Menu() {
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.65 }}
           >
-            <p className="text-overline mb-3">Our Menu</p>
+            <p className="text-overline mb-3">Hot & Fresh</p>
             <h2
               className="font-serif font-light text-espresso leading-tight"
               style={{ fontSize: 'clamp(1.8rem, 3.2vw, 2.85rem)' }}
             >
-              Choose Your
+              Pick Your
               <br />
-              <em className="italic">Chimney Cake</em>
+              <em className="italic">Kurtos</em>
             </h2>
           </motion.div>
 
@@ -48,7 +48,7 @@ export default function Menu() {
             <svg width="13" height="13" viewBox="0 0 24 24" fill="white" aria-hidden="true">
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
             </svg>
-            Order on Zomato
+            Order Now on Zomato
           </motion.a>
         </div>
 
@@ -104,7 +104,7 @@ export default function Menu() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          All cakes made fresh to order. Customisations available — just ask on WhatsApp.
+          Made fresh, served hot. Sweet or savory — perfect for late-night cravings till 4:30 AM.
         </motion.p>
       </div>
     </section>

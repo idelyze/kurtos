@@ -4,7 +4,7 @@ const FOOTER_COLS = [
   {
     title: 'Order',
     links: [
-      { label: 'WhatsApp Order', href: `https://wa.me/${WA_NUMBER}` },
+      { label: 'Order on WhatsApp', href: `https://wa.me/${WA_NUMBER}` },
       { label: 'Zomato',        href: ZOMATO_URL                    },
       { label: 'View Menu',     href: '#menu'                       },
     ],
@@ -12,9 +12,9 @@ const FOOTER_COLS = [
   {
     title: 'Brand',
     links: [
-      { label: 'Our Story',      href: '#our-story' },
+      { label: 'About Kurtos',      href: '#our-story' },
       { label: 'How It Works',   href: '#'          },
-      { label: 'Franchise Info', href: '#'          },
+      { label: 'Partner With Us', href: '#'          },
     ],
   },
   {
@@ -22,7 +22,7 @@ const FOOTER_COLS = [
     links: [
       { label: 'Instagram',   href: 'https://instagram.com' },
       { label: 'WhatsApp',    href: `https://wa.me/${WA_NUMBER}` },
-      { label: 'Contact Us',  href: waLink('Hi! I have a question about Kurtos Kalacs.') },
+      { label: 'Quick Help',  href: waLink('Hi! I have a question about Kurtos Kalacs.') },
     ],
   },
 ]
@@ -66,8 +66,7 @@ export default function Footer() {
                 maxWidth:   '220px',
               }}
             >
-              Central India's first authentic Hungarian chimney cake. Baked on
-              an open flame, served with love.
+              Freshly baked kurtos, straight off the flame. Crispy outside, soft inside, loaded your way — sweet or savory, always served hot in Bhopal.
             </p>
 
             {/* Social icons */}
@@ -156,7 +155,7 @@ export default function Footer() {
             className="font-sans"
             style={{ color: 'rgba(246,237,217,0.18)', fontSize: '0.72rem' }}
           >
-            Hungary's gift to Central India 🇭🇺
+            From Hungary to Bhopal — Fresh till 4:30 AM 🔥
           </p>
         </div>
       </div>

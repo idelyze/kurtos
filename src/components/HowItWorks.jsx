@@ -3,18 +3,18 @@ import { motion } from 'framer-motion'
 const STEPS = [
   {
     number: '01',
-    title:  'Browse & Choose',
-    desc:   'Explore our Classic, Chocolate, and Premium menu. Pick your flavour. Every cake is made to order.',
+    title:  'Pick Your Kurtos',
+    desc:   'Sweet or savory, chocolate or loaded — choose what you’re craving. Everything is made fresh, live on flame.',
   },
   {
     number: '02',
-    title:  'Tap to Order',
-    desc:   'Click any Order button. WhatsApp opens with your selection and price pre-filled — nothing to type.',
+    title:  'Tap & Order',
+    desc:   'Hit order and WhatsApp opens instantly with your item and price. No typing, no waiting.',
   },
   {
     number: '03',
-    title:  'Confirm & Enjoy',
-    desc:   'Confirm your order and location on WhatsApp. Fresh chimney cake — on its way to you.',
+    title:  'Get It Hot',
+    desc:   'Confirm your order and location. Your hot kurtos is prepared fresh and sent out fast — even late night.',
   },
 ]
 
@@ -38,15 +38,15 @@ export default function HowItWorks() {
             className="font-sans font-normal uppercase text-caramel mb-3"
             style={{ fontSize: '0.72rem', letterSpacing: '0.25em' }}
           >
-            Process
+            How It Works
           </p>
           <h2
             className="font-serif font-light text-cream leading-tight"
             style={{ fontSize: 'clamp(1.8rem, 3.2vw, 2.85rem)' }}
           >
-            Three Steps to
+            3 Steps to
             <br />
-            <em className="italic text-caramel">Chimney Bliss</em>
+            <em className="italic text-caramel">Hot Kurtos</em>
           </h2>
         </motion.div>
 

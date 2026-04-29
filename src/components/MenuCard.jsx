@@ -7,7 +7,7 @@ import { waLink, WA_NUMBER } from '../constants/menu'
  * @param {{ item: import('../constants/menu').MenuItem, color: string, accent: string, index: number }} props
  */
 export default function MenuCard({ item, color, accent, index = 0 }) {
-  const orderMessage = `Hi! I'd like to order *${item.name}* from Kurtos Kalacs.\nPrice: ₹${item.price}\n\nPlease confirm availability and delivery details.`
+  const orderMessage = `Hi! I want to order *${item.name}* 🔥\nPrice: ₹${item.price}\n\nIs it available right now? I'm craving something hot 😋 Please share delivery/pickup details.`
 
   return (
     <motion.div
@@ -94,7 +94,7 @@ export default function MenuCard({ item, color, accent, index = 0 }) {
           whileTap={{ scale: 0.97 }}
           style={{ fontSize: '0.74rem' }}
         >
-          Order via WhatsApp
+          Order Now on WhatsApp
         </motion.a>
       </div>
     </motion.div>

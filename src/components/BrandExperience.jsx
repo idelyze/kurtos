@@ -2,29 +2,29 @@ import { motion } from 'framer-motion'
 
 const PANELS = [
   {
-    label: 'The Making',
-    sub:   'Hand-wrapped on a wooden spit',
+    label: 'The Wrap',
+    sub:   'Hand-wrapped, live on the spit',
     bg:    'linear-gradient(150deg, #2C1208, #5C2E14)',
     span:  'lg:col-span-2 lg:row-span-2',
     large: true,
   },
   {
-    label: 'The Flame',
-    sub:   'Open roasted. Not fried.',
+    label: 'On Flame',
+    sub:   'Roasted on open flame. Never fried.',
     bg:    'linear-gradient(150deg, #0D0603, #2C1208)',
     span:  '',
     large: false,
   },
   {
-    label: 'The Roll',
-    sub:   'Sugar coated while warm',
+    label: 'The Coat',
+    sub:   'Sweet or savory, tossed while hot',
     bg:    'linear-gradient(150deg, #5C2E14, #8B4F2A)',
     span:  '',
     large: false,
   },
   {
-    label: 'The Taste',
-    sub:   'Crispy outside. Cloud-soft within.',
+    label: 'The Bite',
+    sub:   'Crispy outside. Soft inside. Loaded with flavor',
     bg:    'linear-gradient(150deg, #8B4F2A, #D4882B)',
     span:  'lg:col-span-2',
     large: false,
@@ -72,14 +72,14 @@ export default function BrandExperience() {
           viewport={{ once: true, margin: '-60px' }}
           transition={{ duration: 0.7 }}
         >
-          <p className="text-overline mb-3">The Experience</p>
+          <p className="text-overline mb-3">How It Hits</p>
           <h2
             className="font-serif font-light text-espresso leading-tight"
             style={{ fontSize: 'clamp(1.8rem, 3.2vw, 2.85rem)' }}
           >
-            Crafted with Fire,
+            Fire-Baked.
             <br />
-            <em className="italic">Not a Fryer</em>
+            <em className="italic">Never Fried</em>
           </h2>
         </motion.div>
 

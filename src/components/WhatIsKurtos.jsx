@@ -10,10 +10,10 @@ const fadeUp = (delay = 0) => ({
 })
 
 const FACTS = [
-  { label: 'Origin',    value: 'Transylvania, 1400s'   },
-  { label: 'Method',    value: 'Open Flame Rotisserie'  },
-  { label: 'First in',  value: 'Central India'          },
-  { label: 'Made',      value: 'Fresh to Order'         },
+  { label: 'Origin',    value: 'Hungary'                },
+  { label: 'Method',    value: 'Open Flame, Not Fried'  },
+  { label: 'First in',  value: 'Bhopal'                 },
+  { label: 'Made',      value: 'Live & Fresh'           },
 ]
 
 // Chimney cake SVG for the image pane
@@ -133,7 +133,7 @@ export default function WhatIsKurtos() {
             viewport={{ once: true, margin: '-60px' }}
             className="text-overline mb-4"
           >
-            What is Kurtos Kalacs?
+            What’s Kurtos?
           </motion.p>
 
           <motion.h2
@@ -144,11 +144,11 @@ export default function WhatIsKurtos() {
             className="font-serif font-light text-espresso leading-tight mb-6"
             style={{ fontSize: 'clamp(1.8rem, 3.2vw, 2.85rem)' }}
           >
-            Europe's Oldest
+            From Hungary to Bhopal
             <br />
-            <em className="italic text-bark">Pastry Tradition</em>
+            <em className="italic text-bark">Street Food Classic</em>
             <br />
-            Reimagined
+            Now Fresh & Hot Here
           </motion.h2>
 
           <motion.p
@@ -158,9 +158,7 @@ export default function WhatIsKurtos() {
             viewport={{ once: true, margin: '-60px' }}
             className="text-body text-bark mb-5"
           >
-            Kürtős Kalács (pronounced "Kur-tosh Ka-lach") is Hungary's most
-            beloved street food — a cylindrical cake baked over an open flame,
-            crispy on the outside, delightfully soft within.
+            Kurtos is a Hungarian street food that’s now hitting Bhopal with full flavor. A dough roll baked on open flame, crispy outside, soft inside, and served hot, straight off the spit.
           </motion.p>
 
           <motion.p
@@ -170,9 +168,7 @@ export default function WhatIsKurtos() {
             viewport={{ once: true, margin: '-60px' }}
             className="text-body text-bark mb-10"
           >
-            The dough is hand-wrapped around a wooden spit, rolled in sugar,
-            then slow-roasted until it caramelizes into a golden crust. Each bite
-            collapses into warm, layered ribbons.
+            We wrap it fresh, roast it live, and load it your way — sweet with chocolate and nuts, or savory with paneer, cheese, and sauces. It’s fast, fresh, and built for real cravings.
           </motion.p>
 
           {/* Fact grid */}

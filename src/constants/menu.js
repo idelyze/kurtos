@@ -34,68 +34,105 @@ export const ZOMATO_URL = 'https://www.zomato.com'
 /** @type {MenuCategory[]} */
 export const MENU = [
   {
-    category: 'Classic',
-    color:  '#7A4020',
-    accent: '#C8934A',
+    category: 'Veg',
+    color: '#4A1F0F',
+    accent: '#A65A2E',
     items: [
       {
-        name:  'Original',
-        price: 149,
-        desc:  'Pure tradition. Crispy spiral dusted with vanilla sugar.',
+        name: 'Cheese Corn Kurtos',
+        price: 169,
+        desc: 'Creamy cheese and corn filling inside hot, crispy kurtos.',
       },
       {
-        name:  'Cinnamon Sugar',
-        price: 159,
-        desc:  'Warm spiced cinnamon on our signature golden roll.',
+        name: 'Paneer Schezwan Kurtos',
+        price: 179,
+        desc: 'Spicy paneer with schezwan sauce, loaded inside fresh hot kurtos.',
       },
       {
-        name:  'Vanilla Dream',
-        price: 149,
-        desc:  'Light vanilla essence with caramelised sugar crust.',
+        name: 'Paneer Makhani Kurtos',
+        price: 179,
+        desc: 'Rich makhani paneer filling, creamy and satisfying.',
+      },
+      {
+        name: 'Paneer Tandoori Kurtos',
+        price: 179,
+        desc: 'Smoky tandoori paneer wrapped in crispy hot kurtos.',
+      },
+      {
+        name: 'Paneer Extravaganza',
+        price: 189,
+        desc: 'Loaded paneer mix with sauces and toppings. Heavy, filling, and bold.',
       },
     ],
   },
   {
-    category: 'Chocolate',
-    color:  '#2C1208',
+    category: 'Non-Veg',
+    color: '#2C1208',
     accent: '#5C2E14',
     items: [
       {
-        name:  'Dark Chocolate',
+        name: 'Chicken Schezwan Kurtos',
         price: 179,
-        desc:  'Rich Belgian dark chocolate draped over the warm spiral.',
+        desc: 'Spicy chicken schezwan filling inside hot crispy kurtos.',
       },
       {
-        name:  'Nutella',
+        name: 'Chicken Makhani Kurtos',
+        price: 179,
+        desc: 'Creamy butter chicken style filling, rich and satisfying.',
+      },
+      {
+        name: 'Chicken Tandoori Kurtos',
+        price: 179,
+        desc: 'Smoky tandoori chicken wrapped in hot kurtos.',
+      },
+      {
+        name: 'Chicken Extravaganza',
         price: 189,
-        desc:  'Generous hazelnut fill with a light cocoa dusting.',
-      },
-      {
-        name:  'Almond Crunch',
-        price: 199,
-        desc:  'Dark chocolate with roasted almond crumble on top.',
+        desc: 'Loaded chicken mix with sauces and toppings. Heavy, bold, and filling.',
       },
     ],
   },
   {
-    category: 'Premium',
-    color:  '#6B3A10',
+    category: 'Desserts',
+    color: '#6B3A10',
     accent: '#D4882B',
     items: [
       {
-        name:  'Lotus Biscoff',
-        price: 219,
-        desc:  'Caramelised biscuit spread with cookie crumble.',
+        name: 'Snow White Kurtos Rings',
+        price: 179,
+        desc: 'Sweet creamy dessert rings with soft texture and light sweetness.',
       },
       {
-        name:  'Pistachio Rose',
-        price: 229,
-        desc:  'Rose water glaze with crushed pistachios.',
+        name: 'Choco Fantasy Kurtos Rings',
+        price: 179,
+        desc: 'Chocolate-loaded dessert rings for a rich sweet craving.',
+      },
+    ],
+  },
+  {
+    category: 'Mocktails',
+    color: '#7A4020',
+    accent: '#C8934A',
+    items: [
+      {
+        name: 'Mint Mojito',
+        price: 119,
+        desc: 'Fresh mint, lime, and soda. Cool and refreshing.',
       },
       {
-        name:  'Caramel Sea Salt',
-        price: 219,
-        desc:  'Salted caramel drizzle on a buttery golden base.',
+        name: 'Blueberry Mojito',
+        price: 119,
+        desc: 'Sweet blueberry twist with a refreshing mint base.',
+      },
+      {
+        name: 'Green Apple Mojito',
+        price: 119,
+        desc: 'Tangy green apple flavor with soda freshness.',
+      },
+      {
+        name: 'Watermelon Mojito',
+        price: 119,
+        desc: 'Light watermelon flavor, refreshing and smooth.',
       },
     ],
   },
@@ -107,7 +144,7 @@ export const MENU = [
 
 export const STORE = {
   city:    'Bhopal, Madhya Pradesh',
-  hours:   '11 AM – 10 PM, Daily',
+  hours:   '4:30 PM – 4:30 AM, Daily',
   phone:   '+91 98765 43210',
-  ordering:'WhatsApp Preferred',
+  ordering:'WhatsApp & Zomato',
 }

@@ -2,9 +2,9 @@ import { motion } from 'framer-motion'
 import { waLink } from '../constants/menu'
 
 const STATS = [
-  { n: '1',  label: 'City now'           },
-  { n: '3+', label: 'By 2026'            },
-  { n: '∞',  label: 'Franchise potential'},
+  { n: '1',  label: 'Cities Live'       },
+  { n: '3+', label: 'Coming Next'       },
+  { n: '∞',  label: 'Growth Mode'       },
 ]
 
 export default function Expansion() {
@@ -34,7 +34,7 @@ export default function Expansion() {
               letterSpacing: '0.2em',
             }}
           >
-            Coming Soon
+            Expanding Fast
           </span>
         </motion.div>
 
@@ -47,9 +47,9 @@ export default function Expansion() {
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.08 }}
         >
-          Kurtos Kalacs
+          Kurtos is Growing
           <br />
-          <em className="italic text-caramel">Everywhere</em>
+          <em className="italic text-caramel">Across Cities</em>
         </motion.h2>
 
         {/* Body */}
@@ -66,9 +66,7 @@ export default function Expansion() {
           viewport={{ once: true }}
           transition={{ duration: 0.65, delay: 0.18 }}
         >
-          Growing beyond Bhopal. Multiple outlets across Madhya Pradesh, then
-          Central India. Franchise opportunities opening soon for food entrepreneurs
-          who want to bring authentic chimney cakes to new cities.
+          Started in Bhopal, now scaling fast. More outlets, more cities, and more late-night cravings covered. We’re building a strong street-food brand — and opening doors for partners who want to grow with us.
         </motion.p>
 
         {/* Stats row */}
@@ -104,7 +102,7 @@ export default function Expansion() {
         {/* CTA */}
         <motion.a
           href={waLink(
-            'Hi! I\'m interested in a Kurtos Kalacs franchise opportunity. Please share more details.'
+            "Hi! I'm interested in partnering with Kurtos. Please share franchise details and next steps."
           )}
           target="_blank"
           rel="noreferrer"
@@ -127,7 +125,7 @@ export default function Expansion() {
           }}
           whileTap={{ scale: 0.97 }}
         >
-          Enquire About Franchise →
+          Partner With Us →
         </motion.a>
       </div>
     </section>
